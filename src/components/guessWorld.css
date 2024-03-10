@@ -1,0 +1,79 @@
+.bg-color{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--mainBgcolor);
+    color: var(--mainColor);
+    position: absolute;
+}
+.guess-container{
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+}
+.guess-container .title{
+    font-size: 4rem;
+    background: var(--secondColor);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+.guess-container .box{
+    width: 100%;
+    background-color: var(--secondBgColor);
+    padding: 50px;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guess-container .box .desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    line-height: 2.5rem;
+}
+.guess-container .box .desc h3{
+    color: var(--discColor);
+}
+.guess-container .box .desc p span{
+    color: #1bcbcb;
+    font-size: 25px;
+    font-weight: bold;
+}
+.guess-container .box .desc button{
+    padding: 10px;
+    width: 100%;
+    border-radius: var(--radius);
+    background-color: var(--btnBgColor);
+    color: var(--mainColor);
+    border: none;
+    font-size: 25px;
+}
+.guess-container .box .desc button:hover{
+    background-color: var(--btnBgColor-hover);
+    cursor: pointer;
+}
+.hidden{
+    display: none;
+}
+.activeWord{
+    font-size: 4rem;
+    color: #4ca5ff;
+}
+.winAnimation{
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+}
+.hiddenAnimation{
+    display: none;
+}
+.desc button{
+    z-index: 20;
+}

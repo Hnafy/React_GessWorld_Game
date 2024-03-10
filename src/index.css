@@ -1,0 +1,36 @@
+:root {
+  --mainBgcolor: #0d1117;
+  --secondBgColor: #222121c2;
+  --mainColor: #fff;
+  --discColor: #ddd;
+  --secondColor: linear-gradient(90deg, #4ca5ff 2.34%, #b673f8 100.78%);
+  --btnBgColor: #2190ff;
+  --btnBgColor-hover: #2190ffaf;
+  --radius: 6px;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.otpInput{
+  width: 50px;
+  height: 50px;
+  color: #1bcbcb;
+  background-color: var(--discColor);
+  border-radius: var(--radius);
+  border: none;
+  outline: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.parentOtp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
