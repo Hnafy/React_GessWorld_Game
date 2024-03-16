@@ -15,15 +15,17 @@ export default function GuessWorld() {
     if (cloneMax === 0) {
         showMaxGuess(5);
         randomWord = words[Math.round(Math.random() * words.length)];
-        disc = randomWord.disc;
-        word = randomWord.word;
+        if(randomWord){
+            disc = randomWord.disc;
+            word = randomWord.word;
+        }
     } else {
         cloneMax = maxGuess;
     }
     const winSound = new Audio(sound);
     let answer = false;
     const onOtpSubmit = (otp) => {
-        if (otp === word) {
+        if (otp.toLowerCase() === word) {
             answer = true;
         } else {
             answer = false;
